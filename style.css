@@ -1,0 +1,52 @@
+:root {
+  --color-vino: #6b1c23;
+  --color-dorado: #c9a24a;
+  --color-fondo: #ffffff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--color-fondo);
+  color: #333;
+  line-height: 1.5;
+}
+#app {
+  max-width: 100%;
+  margin: 0 auto;
+}
+header {
+  background: var(--color-vino);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+header h1 { font-size: 1.4rem; }
+.contenido {
+  padding: 1rem;
+  min-height: calc(100vh - 160px);
+}
+.btn {
+  background: var(--color-vino);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+.hidden { display: none !important; }
+#toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-vino);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
